@@ -2,7 +2,7 @@
 title: Mai 2019
 date: 2019-05-21T22:00:00.000Z
 presenters:
-  - image: ''
+  - image: /img/guillaume-bogard.jpg
     links:
       - linkText: Twitter
         linkURL: 'https://twitter.com/bogardguillaume'
