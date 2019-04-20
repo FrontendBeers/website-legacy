@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 headerImage:
-  image: /img/television.png
+  image: /img/react-beer-lille.png
   imageAlt: React Beer Lille
 title: "Le meetup React lillois des passionné·e·s de houblon ⚛️\U0001F37A"
 upcomingMeetupHeading: Prochain meetup
@@ -16,7 +16,7 @@ callToActions:
       Regarde les sujets qui ont pu être présentés lors de nos anciennes
       rencontres.
   secondCTA:
-    heading: Envie de présenter un sujet ?
+    heading: On t'écoute !
     linkType: external
     linkURL: 'mailto:reactbeerlille@gmail.com'
     subHeading: >-
@@ -27,4 +27,3 @@ seo:
   description: "React Beer Lille, le meetup React lillois des passionné·e·s de houblon ⚛️\U0001F37A"
   title: React Beer Lille
 ---
-

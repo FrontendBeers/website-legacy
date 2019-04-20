@@ -1,7 +1,7 @@
 ---
 templateKey: footer
 logoImage:
-  image: /img/js-wakanda.png
+  image: /img/react-beer-lille-horizontal.png
   imageAlt: JavaScript Wakanda
   tagline: Your friendly local Wakanda meetup
 socialLinks:
@@ -22,4 +22,3 @@ socialLinks:
     label: email us
     linkURL: 'mailto:contact@js-wakanda.org'
 ---
-

@@ -1,12 +1,13 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 .navbar {
-  background-color: $background-dark;
+  background-color: $golden-apricot;
   height: $navbar-height;
 
   &-container {
     display: flex;
     height: 100%;
+    align-items: center;
   }
 
   &-menu {

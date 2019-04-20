@@ -1,11 +1,11 @@
 ---
 templateKey: past-meetups-page
-title: Past Meetups
+title: Meetups passés
 path: /meetups
 seo:
-  browserTitle: Past Meetups | JS Wakanda
-  description: View the topics that were presented at past JavaScript Montreal meetups.
-  title: Past Meetups | JavaScript Wakanda
+  browserTitle: Meetups passés | React Beer Lille
+  description: Retrouve les précédents sujets abordés lors de nos soirées React Beer Lille
+  title: Meetups passés | React Beer Lille
 ---
 
-Here are some of the subjects we've covered in past meetups. If you're interested in participating by giving a talk, don't worry too much if we've touched on the subject before. New people join every day and there are a lot of subjects warranting a re-visit.
+Voici les soirées React Beer Lille que nous avons pu organiser ces derniers temps ! Si tu souhaites participer en donnant une conférence, ne t'inquiétes pas trop si nous avons déjà abordé le sujet. De nouvelles personnes rejoignent le groupe tous les jours et de nombreux sujets méritent d'être abordés de nouveau.

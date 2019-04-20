@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: Wakanda JavaScript Developer Meetup
+title: React Beer Lille
 mainImage:
   image: /img/teemu-paananen-376238-unsplash.jpg
   imageAlt: Wakanda JavaScript developer presenting at a meetup.
@@ -12,7 +12,7 @@ gallery:
   - image: /img/annie-spratt-608001-unsplash.jpg
     imageAlt: Wakanda developers working together at a table.
 developerGroups: |-
-  ## Other Wakanda Developer Groups
+  ## D'autres meetups cool sur Lille !
 
   * [React & React Native Meetup](https://www.google.com)
   * [Python Meetup](https://www.google.com)
@@ -20,22 +20,26 @@ developerGroups: |-
   * [Vue.js Meetup](https://www.google.com)
   * [Ruby Meetup](https://www.google.com)
 organizers:
-  title: Group Organizers
+  title: Organisateur
   gallery:
-    - image: /img/organizer-1.jpg
-      imageAlt: Tom Cruise
-      name: Tom Cruise
-    - image: /img/organizer-2.jpg
-      imageAlt: Tom Hanks
-      name: Tom Hanks
+    - image: /img/lauthieb.jpg
+      imageAlt: Laurent Thiebault
+      name: Laurent Thiebault
 seo:
-  browserTitle: About | JavaScript Wakanda
+  browserTitle: A propos | React Beer Lille
   description: >-
-    JavaScript Wakanda is a meetup group that holds monthly meetups where
-    JavaScript developers get together for presentations and to meet others in
-    the community.
-  title: About | JS Wakanda
----
-## Sharing Ideas and Meeting Others
+    React Beer Lille est un groupe Meetup s'adressant aux personnes intéressé·e·s par l’univers de React ⚛️. L’idée est de se réunir pour échanger autour de cette librairie et de son écosystème.
 
-JS Wakanda is a user group run by volunteers. We meet in borrowed spaces, graciously provided by different companies and organisations. Our purpose is to provide a place where our members have a good time talking about programming, sharing their knowledge and meeting other passionate folks. We keep it friendly, inclusive and positive.
+    Que vous soyez expérimenté(e) ou novice, venez découvrir ou partager autour de cette techno. Tous les niveaux sont les bienvenus !
+  title: A propos | React Beer Lille
+---
+
+## A propos de nous
+
+React Beer Lille s'adresse aux personnes intéressé·e·s par l’univers de React ⚛️. L’idée est de se réunir pour échanger autour de cette librairie et de son écosystème.
+
+Que vous soyez expérimenté(e) ou novice, venez découvrir ou partager autour de cette techno. Tous les niveaux sont les bienvenus !
+
+PS: Y'aura de la bière ! 🍻
+
+Qu'est-ce que tu attends ? Rejoins-nous !

@@ -1,11 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import "./styles.scss";
-import CustomLink from "../CustomLink";
+import './styles.scss';
+import CustomLink from '../CustomLink';
 
 export const NavbarTemplate = ({ data }) => (
   <nav className="navbar">
     <div className="container  navbar-container">
+      <CustomLink linkType="internal" linkURL="/" className="navbar-menuLink">
+        <span style={{ fontWeight: 500, fontSize: '18px' }}>
+          React Beer Lille
+        </span>
+      </CustomLink>
       {data.menuItems.length > 0 && (
         <ul className="navbar-menu">
           {data.menuItems.map(menuItem => (
