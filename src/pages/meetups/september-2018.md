@@ -1,35 +1,41 @@
 ---
 templateKey: meetup
-title: September 2018
-date: 2018-09-11T22:00:00.000Z
+title: Avril 2019
+date: 2019-04-03T22:00:00.000Z
 presenters:
-  - image: /img/edward-cisneros-415601-unsplash.jpg
+  - image: /img/lauthieb.jpg
     links:
-      - linkText: Async/Await
-        linkURL: 'https://google.com/'
-      - linkText: Promises
-        linkURL: 'https://google.com/'
-    name: Brittany Vonn
-    presentationTitle: 'No sugar please: a tearing down of abstractions'
+      - linkText: Vidéo
+        linkURL: 'https://www.youtube.com/watch?v=zMpSwo03aKo'
+    name: Laurent Thiebault
+    presentationTitle: 'Storybook, le playground qu''il vous faut pour vos composants UI !'
     text: >-
-      To demistify one of JS' hotest bits of syntax sugar and the familiar
-      Promise, Brittany will break down the mechanics of both async patterns by
-      building his own naive variations of those language features.
-  - image: /img/marius-ciocirlan-398931-unsplash.jpg
-    links:
-      - linkText: React Native
-        linkURL: 'https://facebook.github.io/react-native/'
-    name: Brian Kardashian
-    presentationTitle: React & React Native
+      Storybook est un environnement de développement d'interface utilisateur.
+      Cet outil nous permet de créer des composants de manière indépendante et
+      de les présenter de manière interactive dans un environnement de
+      développement isolé.
+
+      Dans ce quickie, vous découvrirez comment mettre en place Storybook sur
+      votre projet, ce qu'il apporte, les différents addons disponibles et
+      comment son snapshot testing intégré vous sauvera la vie !
+  - image: /img/olivier-youf.jpg
+    links: []
+    name: Olivier Youf
+    presentationTitle: Repenser son application React avec les Hooks
     text: >-
-      The folks at Turbulent have been working hard using React and React-Native
-      to bring quality, cross platform JS products to market. Today, they will
-      show us the patterns, structures and challenges of building large scale
-      cross platform apps.
+      Si vous vous intéressez de près ou de loin à React, vous n’avez pas pu
+      passer à côté des Hooks ! Arrivée depuis la version 16.8, cette évolution
+      majeure de l’API de React ouvre de nombreux horizons, simplifie beaucoup
+      notre vie de tous les jours, mais pose également une problématique de
+      réflexion sur la mise en place de nos composants. Après une introduction
+      sur les hooks, nous verrons comment monter sa solution en embarquant un
+      ensemble d’outils et de bonnes pratiques. Nous verrons comment organiser
+      et tester son code et comment changer quelques habitudes pour utiliser
+      pleinement cette nouvelle fonctionnalité.
 location:
-  mapsLatitude: 64.843779
-  mapsLink: 'https://goo.gl/maps/Rm6ihxVrZGK2'
-  mapsLongitude: -147.718189
-  name: Fairbanks Ice Museum
+  mapsLatitude: 50.64676
+  mapsLink: 'https://goo.gl/maps/eZaJ9eFqzvYUriAF6'
+  mapsLongitude: 3.142594
+  name: Decathlon Campus
 ---
 
