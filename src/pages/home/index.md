@@ -2,27 +2,29 @@
 templateKey: home-page
 headerImage:
   image: /img/television.png
-  imageAlt: JavaScript Wakanda
-title: Meet other JavaScript Developers in Wakanda
-upcomingMeetupHeading: Upcoming Meetup
-noUpcomingMeetupText: Details to be announced.
-mapsNote: Clicking the pin opens Google Maps in a new tab.
+  imageAlt: React Beer Lille
+title: "Le meetup React lillois des passionné·e·s de houblon ⚛️\U0001F37A"
+upcomingMeetupHeading: Prochain meetup
+noUpcomingMeetupText: 'Patience, ça va bientôt être annoncé !'
+mapsNote: Clique sur le marqueur pour ouvrir Google Maps dans un nouvel onglet.
 callToActions:
   firstCTA:
-    heading: Past Meetups
+    heading: Meetups passés
     linkType: internal
     linkURL: /meetups
-    subHeading: Look at what topics were presented at past meetups.
+    subHeading: >-
+      Regarde les sujets qui ont pu être présentés lors de nos anciennes
+      rencontres.
   secondCTA:
-    heading: Volunteer to Present
+    heading: Envie de présenter un sujet ?
     linkType: external
-    linkURL: 'mailto:contact@js-wakanda.org'
-    subHeading: Want to present at an upcoming meetup? Contact us.
+    linkURL: 'mailto:reactbeerlille@gmail.com'
+    subHeading: >-
+      Tu souhaites présenter un sujet lors d'un prochain React Beer Lille ?
+      Contacte-nous !
 seo:
-  browserTitle: JS Wakanda
-  description: >-
-    JavaScript meetup group in Wakanda where JavaScript developers get together
-    for presentations and to meet others in the community.
-  title: JavaScript Wakanda
+  browserTitle: React Beer Lille
+  description: "React Beer Lille, le meetup React lillois des passionné·e·s de houblon ⚛️\U0001F37A"
+  title: React Beer Lille
 ---
 
