@@ -1,5 +1,5 @@
 ---
-title: Mai 2019
+title: 'React Beer Lille #2 - Redux Saga'
 date: 2019-05-21T22:00:00.000Z
 presenters:
   - image: /img/guillaume-bogard.jpg
