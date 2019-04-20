@@ -8,11 +8,11 @@ presenters:
         linkURL: 'https://twitter.com/bogardguillaume'
     name: Guillaume Bogard
     presentationTitle: 'Redux Saga : scalabilité et gestion des effets de bord'
-    text: Développeur chez LinkValue à Lille.
+    text: Développeur chez Linkvalue à Lille.
 location:
   mapsLatitude: 50.636546
   mapsLink: 'https://goo.gl/maps/NG4qF9NJHz3htVJ27'
   mapsLongitude: 3.060857
-  name: LinkValue Lille
+  name: Linkvalue Lille
 ---
 
