@@ -1,6 +1,6 @@
 ---
-title: November 2060
-date: 2060-11-09T23:00:00.000Z
+title: Mai 2019
+date: 2019-05-21T22:00:00.000Z
 presenters:
   - image: ''
     links:
@@ -10,9 +10,9 @@ presenters:
     presentationTitle: 'Redux Saga : scalabilité et gestion des effets de bord'
     text: Développeur chez LinkValue à Lille.
 location:
-  mapsLatitude: .nan
+  mapsLatitude: 50.636546
   mapsLink: 'https://goo.gl/maps/NG4qF9NJHz3htVJ27'
-  mapsLongitude: .nan
+  mapsLongitude: 3.060857
   name: LinkValue Lille
 ---
 
