@@ -14,11 +14,14 @@ gallery:
 developerGroups: |-
   ## D'autres meetups cool sur Lille !
 
-  * [React & React Native Meetup](https://www.google.com)
-  * [Python Meetup](https://www.google.com)
-  * [Google Developer Meetup](https://www.google.com)
-  * [Vue.js Meetup](https://www.google.com)
-  * [Ruby Meetup](https://www.google.com)
+  * [Ch’ti JS](https://chtijs.francejs.org/)
+  * [GDG Lille](https://www.meetup.com/GDG-Lille/)
+  * [Ch’ti JUG](https://www.meetup.com/ChtiJUG/)
+  * [Lille FP](https://www.meetup.com/Lille-FP/)
+  * [Software Craft Lille](https://www.meetup.com/Software-Craftsmanship-Lille)
+  * [.NET Lille](https://www.meetup.com/Meetup-NET-Lille/)
+  * [Swift Lille](https://www.meetup.com/Swift-Lille/)
+  * [Nord Agile](https://www.meetup.com/Nord-agile/)
 organizers:
   title: Organisateur
   gallery:
