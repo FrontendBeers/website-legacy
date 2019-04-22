@@ -1,16 +1,34 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 
-import "../styles";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
+import '../styles';
+import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer';
 
-const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => (
+const TemplateWrapper = ({
+  footerData = null,
+  navbarData = null,
+  children
+}) => (
   <div>
     <Helmet>
-      <html lang="en" />
-      <meta name="keywords" content="montreal, javascript, programming, meetup" />
+      <html lang="fr" />
+      <meta property="og:url" content="https://reactbeerlille.netlify.com" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="React Beer Lille" />
+      <meta
+        property="og:description"
+        content="Le meetup React lillois des passionné·e·s de houblon"
+      />
+      <meta
+        property="og:image"
+        content="https://secure.meetupstatic.com/photos/event/3/e/1/9/600_479415897.jpeg"
+      />
+      <meta
+        name="keywords"
+        content="react, lille, javascript, programming, meetup"
+      />
     </Helmet>
     <Navbar data={navbarData} />
     <main>{children}</main>
@@ -20,7 +38,9 @@ const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => 
 
 export const query = graphql`
   fragment LayoutFragment on Query {
-    footerData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "footer" } } }) {
+    footerData: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "footer" } } }
+    ) {
       edges {
         node {
           id
@@ -40,7 +60,9 @@ export const query = graphql`
         }
       }
     }
-    navbarData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "navbar" } } }) {
+    navbarData: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "navbar" } } }
+    ) {
       edges {
         node {
           id
