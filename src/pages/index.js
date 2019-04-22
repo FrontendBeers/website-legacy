@@ -37,7 +37,13 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
           <h2 className="upcomingMeetup-title">{home.upcomingMeetupHeading}</h2>
           {upcomingMeetup ? (
             <>
-              <h2 className="meetup-title">{upcomingMeetup.title}</h2>
+              <a
+                href={upcomingMeetup.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="meetup-title">{upcomingMeetup.title}</h2>
+              </a>
               <p className="upcomingMeetup-detail  upcomingMeetup-detail--date">
                 <span className="upcomingMeetup-detailLabel">Date: </span>
                 {upcomingMeetup.formattedDate}
@@ -46,6 +52,20 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 <span className="upcomingMeetup-detailLabel">Lieu: </span>
                 {upcomingMeetup.location.name}
               </p>
+              {upcomingMeetup.url && (
+                <p className="upcomingMeetup-detail  upcomingMeetup-detail--url">
+                  <span className="upcomingMeetup-detailLabel">
+                    S'inscrire :{' '}
+                  </span>
+                  <a
+                    href={upcomingMeetup.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ici
+                  </a>
+                </p>
+              )}
               {presenters.length > 0 && (
                 <div className="upcomingMeetup-presenters">
                   {presenters.map(presenter => (
@@ -189,6 +209,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             formattedDate: date(formatString: "DD/MM/YYYY à H:mm")
+            url
             rawDate: date
             presenters {
               name

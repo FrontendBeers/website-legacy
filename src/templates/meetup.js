@@ -11,7 +11,13 @@ class MeetupTemplate extends Component {
         className={`meetup  ${this.props.className && this.props.className}`}
         key={this.props.meetup.rawDate}
       >
-        <h2 className="meetup-title">{this.props.meetup.title}</h2>
+        <a
+          href={this.props.meetup.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="meetup-title">{this.props.meetup.title}</h2>
+        </a>
         <div className="meetup-meta">
           <p className="meetup-metaField  meetup-metaField--date">
             <span className="meetup-label">Date :</span>{' '}
@@ -67,6 +73,7 @@ MeetupTemplate.propTypes = {
   meetup: PropTypes.shape({
     title: PropTypes.string,
     name: PropTypes.string,
+    url: PropTypes.string,
     presenters: PropTypes.array
   })
 };

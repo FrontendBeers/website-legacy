@@ -2,6 +2,7 @@
 templateKey: meetup
 title: "React Beer Lille #1 - Storyb'Hooks"
 date: 2019-04-04T18:30:00.000Z
+url: https://www.meetup.com/fr-FR/ReactBeerLille/events/259729492/
 presenters:
   - image: /img/lauthieb.jpg
     links:

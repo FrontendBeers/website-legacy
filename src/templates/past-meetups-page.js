@@ -105,6 +105,7 @@ export const pastMeetupsPageQuery = graphql`
           frontmatter {
             title
             formattedDate: date(formatString: "DD/MM/YYYY à H:mm")
+            url
             rawDate: date
             presenters {
               name
