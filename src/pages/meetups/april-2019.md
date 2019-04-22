@@ -1,14 +1,14 @@
 ---
 templateKey: meetup
-title: 'React Beer Lille #1 - Storyb''Hooks'
-date: 2019-04-04T16:30:00.000Z
+title: "React Beer Lille #1 - Storyb'Hooks"
+date: 2019-04-04T18:30:00.000Z
 presenters:
   - image: /img/lauthieb.jpg
     links:
       - linkText: Vidéo
         linkURL: 'https://www.youtube.com/watch?v=zMpSwo03aKo'
     name: Laurent Thiebault
-    presentationTitle: 'Storybook, le playground qu''il vous faut pour vos composants UI !'
+    presentationTitle: "Storybook, le playground qu'il vous faut pour vos composants UI !"
     text: >-
       Storybook est un environnement de développement d'interface utilisateur.
       Cet outil nous permet de créer des composants de manière indépendante et
@@ -38,4 +38,3 @@ location:
   mapsLongitude: 3.142594
   name: Decathlon Campus
 ---
-

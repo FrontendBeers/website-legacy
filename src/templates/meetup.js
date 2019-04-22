@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import "../styles/meetup.scss";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import '../styles/meetup.scss';
 
-import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
+import HeadshotPlaceholder from '../img/headshot-placeholder.svg';
 
 class MeetupTemplate extends Component {
   render() {
@@ -14,10 +14,12 @@ class MeetupTemplate extends Component {
         <h2 className="meetup-title">{this.props.meetup.title}</h2>
         <div className="meetup-meta">
           <p className="meetup-metaField  meetup-metaField--date">
-            <span className="meetup-label">Date:</span> {this.props.meetup.formattedDate}
+            <span className="meetup-label">Date :</span>{' '}
+            {this.props.meetup.formattedDate}
           </p>
           <p className="meetup-metaField  meetup-metaField--location">
-            <span className="meetup-label">Location:</span> {this.props.meetup.location.name}
+            <span className="meetup-label">Lieu :</span>{' '}
+            {this.props.meetup.location.name}
           </p>
         </div>
         <div className="meetup-presenters">
@@ -27,13 +29,19 @@ class MeetupTemplate extends Component {
                 <img
                   className="meetup-presenterImage"
                   src={presenter.image ? presenter.image : HeadshotPlaceholder}
-                  alt={presenter.image ? presenter.name : "Default headshot placeholder"}
+                  alt={
+                    presenter.image
+                      ? presenter.name
+                      : 'Default headshot placeholder'
+                  }
                 />
                 <span className="meetup-presenterName">{presenter.name}</span>
               </div>
               <div className="meetup-presenterInfo">
                 {presenter.presentationTitle && (
-                  <h3 className="meetup-presenterTitle">{presenter.presentationTitle}</h3>
+                  <h3 className="meetup-presenterTitle">
+                    {presenter.presentationTitle}
+                  </h3>
                 )}
                 <p className="meetup-presenterText">{presenter.text}</p>
                 <ul className="meetup-presenterLinks">
@@ -59,8 +67,8 @@ MeetupTemplate.propTypes = {
   meetup: PropTypes.shape({
     title: PropTypes.string,
     name: PropTypes.string,
-    presenters: PropTypes.array,
-  }),
+    presenters: PropTypes.array
+  })
 };
 
 export default MeetupTemplate;
