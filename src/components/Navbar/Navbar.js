@@ -7,7 +7,7 @@ export const NavbarTemplate = ({ data }) => (
   <nav className="navbar">
     <div className="container  navbar-container">
       <CustomLink linkType="internal" linkURL="/" className="navbar-menuLink">
-        <span style={{ fontWeight: 500, fontSize: '18px' }}>
+        <span style={{ fontWeight: 500, fontSize: '16px' }}>
           React Beer Lille
         </span>
       </CustomLink>
