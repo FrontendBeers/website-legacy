@@ -21,7 +21,7 @@ callToActions:
     linkURL: 'mailto:reactbeerlille@gmail.com'
     subHeading: >-
       Tu souhaites présenter un sujet lors d'un prochain React Beer Lille ?
-      Contacte-nous !
+      Contacte-nous à reactbeerlille@gmail.com !
 seo:
   browserTitle: React Beer Lille
   description: "React Beer Lille, le meetup React lillois des passionné·e·s de houblon ⚛️\U0001F37A"
