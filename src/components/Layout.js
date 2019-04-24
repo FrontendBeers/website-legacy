@@ -14,7 +14,7 @@ const TemplateWrapper = ({
   <div>
     <Helmet>
       <html lang="fr" />
-      <meta property="og:url" content="https://reactbeerlille.netlify.com" />
+      <meta name="og:url" content="https://reactbeerlille.netlify.com" />
       <meta property="og:type" content="article" />
       <meta property="og:title" content="React Beer Lille" />
       <meta
@@ -28,6 +28,18 @@ const TemplateWrapper = ({
       <meta
         name="keywords"
         content="react, lille, javascript, programming, meetup"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@ReactBeerLille" />
+      <meta name="twitter:creator" content="@ReactBeerLille" />
+      <meta name="twitter:title" content="React Beer Lille" />
+      <meta
+        name="twitter:description"
+        content="Le meetup React lillois des passionné·e·s de houblon"
+      />
+      <meta
+        name="twitter:image"
+        content="https://secure.meetupstatic.com/photos/event/3/e/1/9/600_479415897.jpeg"
       />
     </Helmet>
     <Navbar data={navbarData} />
