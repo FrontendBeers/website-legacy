@@ -29,7 +29,7 @@ const TemplateWrapper = ({
         name="keywords"
         content="react, lille, javascript, programming, meetup"
       />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@ReactBeerLille" />
       <meta name="twitter:creator" content="@ReactBeerLille" />
       <meta name="twitter:title" content="React Beer Lille" />
