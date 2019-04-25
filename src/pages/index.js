@@ -12,6 +12,7 @@ import '../styles/home.scss';
 
 export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
   const presenters = upcomingMeetup && upcomingMeetup.presenters;
+  const sponsors = upcomingMeetup && upcomingMeetup.sponsors;
   const latitude =
     upcomingMeetup && parseFloat(upcomingMeetup.location.mapsLatitude);
   const longitude =
@@ -117,6 +118,8 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   ))}
                 </div>
               )}
+              {sponsors.length > 0 &&
+                sponsors.map(sponsor => <h1>{sponsor.name}</h1>)}
               <p className="upcomingMeetup-mapNote">{home.mapsNote}</p>
               <div className="upcomingMeetup-mapWrapper">
                 <Map
@@ -238,6 +241,11 @@ export const pageQuery = graphql`
                 linkText
                 linkURL
               }
+            }
+            sponsors {
+              name
+              image
+              url
             }
             location {
               mapsLatitude

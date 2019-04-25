@@ -69,6 +69,11 @@ class MeetupTemplate extends Component {
             </div>
           ))}
         </div>
+        <div className="meetup-sponsors">
+          {this.props.meetup.sponsors.map(sponsor => (
+            <h1>{sponsor.name}</h1>
+          ))}
+        </div>
       </section>
     );
   }
@@ -79,7 +84,8 @@ MeetupTemplate.propTypes = {
     title: PropTypes.string,
     name: PropTypes.string,
     url: PropTypes.string,
-    presenters: PropTypes.array
+    presenters: PropTypes.array,
+    sponsors: PropTypes.array
   })
 };
 

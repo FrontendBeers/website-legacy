@@ -93,6 +93,18 @@
     }
   }
 
+  &-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -10px;
+
+    @include respond-to('medium') {
+      margin-bottom: 0x;
+      margin: 0 -20px;
+    }
+  }
+
   &-presenter {
     display: flex;
     align-items: flex-start;
