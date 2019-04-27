@@ -1,10 +1,10 @@
 ---
 templateKey: meetup
-title: 'React Beer Lille #1 - Storyb''Hooks'
+title: "React Beer Lille #1 - Storyb'Hooks"
 date: 2019-04-04T18:30:00.000Z
 url: 'https://www.meetup.com/fr-FR/ReactBeerLille/events/259729492/'
 presenters:
-  - image: /img/lauthieb.jpg
+  - image: /img/lauthieb.png
     links:
       - linkText: Twitter
         linkURL: 'https://twitter.com/lauthieb'
@@ -13,7 +13,7 @@ presenters:
       - linkText: Slides
         linkURL: 'https://reactbeerlille.github.io/storybook-talk/'
     name: Laurent Thiebault
-    presentationTitle: 'Storybook, le playground qu''il vous faut pour vos composants UI !'
+    presentationTitle: "Storybook, le playground qu'il vous faut pour vos composants UI !"
     text: >-
       Storybook est un environnement de développement d'interface utilisateur.
       Cet outil nous permet de créer des composants de manière indépendante et
@@ -46,7 +46,7 @@ sponsors:
     image: https://d29dpxox3qezd.cloudfront.net/uploads/mentor/5bb75be115a08823bad4f850/logo.png?v=1555653607
     url: https://recrutement.decathlon.fr/
   - name: 'Saveur Bière'
-    image: https://img.saveur-biere.com/v4/assets/images/home_page/rounded_logo.png
+    image: /img/saveur-biere.png
     url: https://www.saveur-biere.com/fr/
 location:
   mapsLatitude: 50.64676
@@ -54,4 +54,3 @@ location:
   mapsLongitude: 3.142594
   name: Decathlon Campus
 ---
-

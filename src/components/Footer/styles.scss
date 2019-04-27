@@ -44,7 +44,7 @@
   }
 
   &-aboutTitleImg {
-    max-height: 100px;
+    max-height: 70px;
     height: auto;
     margin-bottom: 10px;
   }
@@ -82,7 +82,9 @@
   &-flag {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 1rem;
     padding-top: 20px;
 

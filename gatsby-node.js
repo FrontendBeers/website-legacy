@@ -1,6 +1,6 @@
-const _ = require("lodash");
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+const _ = require('lodash');
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -30,9 +30,9 @@ exports.createPages = ({ actions, graphql }) => {
 
     // Filter out the footer, navbar, and meetups so we don't create pages for those
     const postOrPage = result.data.allMarkdownRemark.edges.filter(edge => {
-      if (edge.node.frontmatter.templateKey === "navbar") {
+      if (edge.node.frontmatter.templateKey === 'navbar') {
         return false;
-      } else if (edge.node.frontmatter.templateKey === "footer") {
+      } else if (edge.node.frontmatter.templateKey === 'footer') {
         return false;
       } else {
         return !Boolean(edge.node.fields.slug.match(/^\/meetups\/.*$/));
@@ -41,12 +41,14 @@ exports.createPages = ({ actions, graphql }) => {
 
     postOrPage.forEach(edge => {
       let component, pathName;
-      if (edge.node.frontmatter.templateKey === "home-page") {
-        pathName = "/";
+      if (edge.node.frontmatter.templateKey === 'home-page') {
+        pathName = '/';
         component = path.resolve(`src/pages/index.js`);
       } else {
         pathName = edge.node.frontmatter.path || edge.node.fields.slug;
-        component = path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.js`);
+        component = path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+        );
       }
       const id = edge.node.id;
       createPage({
@@ -54,11 +56,21 @@ exports.createPages = ({ actions, graphql }) => {
         component,
         // additional data can be passed via context
         context: {
-          id,
-        },
+          id
+        }
       });
     });
   });
+};
+
+exports.onCreateWebpackConfig = ({ getConfig, stage }) => {
+  const config = getConfig();
+  if (stage.startsWith('develop') && config.resolve) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'react-dom': '@hot-loader/react-dom'
+    };
+  }
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -69,7 +81,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value
     });
   }
 };

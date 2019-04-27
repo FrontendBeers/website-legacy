@@ -25,7 +25,7 @@ developerGroups: |-
 organizers:
   title: Organisateur
   gallery:
-    - image: /img/lauthieb.jpg
+    - image: /img/lauthieb.png
       imageAlt: Laurent Thiebault
       name: Laurent Thiebault
       twitterURL: https://twitter.com/lauthieb

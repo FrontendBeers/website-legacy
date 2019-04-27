@@ -45,6 +45,18 @@ export const FooterTemplate = ({ data }) => {
             <span role="img" aria-label="Made with love by React Beer Lille">
               Made with ❤️ by React Beer Lille
             </span>
+            <div style={{ marginTop: '10px' }}>
+              <a
+                href="https://github.com/ReactBeerLille/website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span role="img" aria-label="laptop">
+                  💻
+                </span>{' '}
+                Source code
+              </a>
+            </div>
           </div>
         </div>
       </div>
