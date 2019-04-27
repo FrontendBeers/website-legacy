@@ -89,6 +89,24 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                       <span className="upcomingMeetup-presenterName">
                         {presenter.name}
                       </span>
+                      <ul className="upcomingMeetup-presenterLinks">
+                        {presenter.links &&
+                          presenter.links.map((link, index) => (
+                            <li
+                              key={index}
+                              className="upcomingMeetup-presenterLinkItem"
+                            >
+                              <a
+                                className="upcomingMeetup-presenterLink"
+                                href={link.linkURL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {link.linkText}
+                              </a>
+                            </li>
+                          ))}
+                      </ul>
                       <span className="upcomingMeetup-presenterPresentationTitle">
                         {presenter.presentationTitle}
                       </span>
@@ -216,6 +234,10 @@ export const pageQuery = graphql`
               image
               text
               presentationTitle
+              links {
+                linkText
+                linkURL
+              }
             }
             location {
               mapsLatitude
