@@ -59,6 +59,18 @@ collections:
             ],
         }
       - {
+          label: Sponsors,
+          name: sponsors,
+          required: true,
+          widget: list,
+          fields:
+            [
+              { label: Name, name: name, required: true, widget: string },
+              { label: Image, name: image, required: true, widget: image },
+              { label: URL, name: url, required: true, widget: string },
+            ],
+        }
+      - {
           label: 'Location',
           name: 'location',
           required: true,

@@ -12,6 +12,7 @@ import '../styles/home.scss';
 
 export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
   const presenters = upcomingMeetup && upcomingMeetup.presenters;
+  const upcomingMeetupSponsors = upcomingMeetup && upcomingMeetup.sponsors;
   const latitude =
     upcomingMeetup && parseFloat(upcomingMeetup.location.mapsLatitude);
   const longitude =
@@ -50,7 +51,13 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
               </p>
               <p className="upcomingMeetup-detail  upcomingMeetup-detail--location">
                 <span className="upcomingMeetup-detailLabel">Lieu: </span>
-                {upcomingMeetup.location.name}
+                <a
+                  href={upcomingMeetup.location.mapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {upcomingMeetup.location.name}
+                </a>
               </p>
               {upcomingMeetup.url && (
                 <p className="upcomingMeetup-detail  upcomingMeetup-detail--url">
@@ -65,6 +72,36 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                     ici
                   </a>
                 </p>
+              )}
+              {upcomingMeetupSponsors.length > 0 && (
+                <div className="upcomingMeetup-sponsors">
+                  {upcomingMeetupSponsors.map(upcomingMeetupSponsor => (
+                    <div
+                      className="upcomingMeetup-sponsor"
+                      key={upcomingMeetupSponsor.name}
+                    >
+                      <a
+                        href={upcomingMeetupSponsor.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          className="upcomingMeetup-sponsorImage"
+                          src={
+                            upcomingMeetupSponsor.image
+                              ? upcomingMeetupSponsor.image
+                              : HeadshotPlaceholder
+                          }
+                          alt={
+                            upcomingMeetupSponsor.image
+                              ? upcomingMeetupSponsor.name
+                              : 'Default headshot placeholder'
+                          }
+                        />
+                      </a>
+                    </div>
+                  ))}
+                </div>
               )}
               {presenters.length > 0 && (
                 <div className="upcomingMeetup-presenters">
@@ -134,6 +171,34 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
           ) : (
             <p className="upcomingMeetup-detail">{home.noUpcomingMeetupText}</p>
           )}
+        </div>
+      </section>
+      <section className="section  sponsors">
+        <div className="container  sponsors-container">
+          <h2 className="sponsors-title">
+            Sponsor annuel{' '}
+            <span role="img" aria-label="Annual sponsor">
+              ❤️
+            </span>
+          </h2>
+          <ul className="sponsors-list">
+            <li className="sponsors-listItem">
+              <a
+                href="https://recrutement.decathlon.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: 'grid' }}
+              >
+                <img
+                  className="sponsors-listItemImage"
+                  src={
+                    'https://d29dpxox3qezd.cloudfront.net/uploads/mentor/5bb75be115a08823bad4f850/logo.png?v=1555653607'
+                  }
+                  alt={'Decathlon'}
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section className="ctaBlock">
@@ -238,6 +303,11 @@ export const pageQuery = graphql`
                 linkText
                 linkURL
               }
+            }
+            sponsors {
+              name
+              image
+              url
             }
             location {
               mapsLatitude

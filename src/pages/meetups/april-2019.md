@@ -41,6 +41,13 @@ presenters:
       ensemble d’outils et de bonnes pratiques. Nous verrons comment organiser
       et tester son code et comment changer quelques habitudes pour utiliser
       pleinement cette nouvelle fonctionnalité.
+sponsors:
+  - name: 'Decathlon'
+    image: https://d29dpxox3qezd.cloudfront.net/uploads/mentor/5bb75be115a08823bad4f850/logo.png?v=1555653607
+    url: https://recrutement.decathlon.fr/
+  - name: 'Saveur Bière'
+    image: https://img.saveur-biere.com/v4/assets/images/home_page/rounded_logo.png
+    url: https://www.saveur-biere.com/fr/
 location:
   mapsLatitude: 50.64676
   mapsLink: 'https://goo.gl/maps/eZaJ9eFqzvYUriAF6'

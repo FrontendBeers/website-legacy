@@ -25,9 +25,34 @@ class MeetupTemplate extends Component {
           </p>
           <p className="meetup-metaField  meetup-metaField--location">
             <span className="meetup-label">Lieu :</span>{' '}
-            {this.props.meetup.location.name}
+            <a
+              href={this.props.meetup.location.mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {this.props.meetup.location.name}
+            </a>
           </p>
         </div>
+        {this.props.meetup.sponsors.length > 0 && (
+          <div className="meetup-sponsors">
+            {this.props.meetup.sponsors.map(sponsor => (
+              <div className="meetup-sponsor" key={sponsor.name}>
+                <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="meetup-sponsorImage"
+                    src={sponsor.image ? sponsor.image : HeadshotPlaceholder}
+                    alt={
+                      sponsor.image
+                        ? sponsor.name
+                        : 'Default headshot placeholder'
+                    }
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
         <div className="meetup-presenters">
           {this.props.meetup.presenters.map(presenter => (
             <div className="meetup-presenter" key={presenter.name}>
@@ -79,7 +104,8 @@ MeetupTemplate.propTypes = {
     title: PropTypes.string,
     name: PropTypes.string,
     url: PropTypes.string,
-    presenters: PropTypes.array
+    presenters: PropTypes.array,
+    sponsors: PropTypes.array
   })
 };
 

@@ -117,8 +117,14 @@ export const pastMeetupsPageQuery = graphql`
                 linkURL
               }
             }
+            sponsors {
+              name
+              image
+              url
+            }
             location {
               name
+              mapsLink
             }
           }
         }
