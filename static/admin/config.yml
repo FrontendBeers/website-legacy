@@ -5,7 +5,7 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-display_url: https://reactbeerlille.netlify.com/
+display_url: https://reactbeerlille.org
 
 collections:
   - name: 'meetups'

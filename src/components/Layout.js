@@ -14,7 +14,7 @@ const TemplateWrapper = ({
   <div>
     <Helmet>
       <html lang="fr" />
-      <meta name="og:url" content="https://reactbeerlille.netlify.com" />
+      <meta name="og:url" content="https://reactbeerlille.org" />
       <meta property="og:type" content="article" />
       <meta property="og:title" content="React Beer Lille" />
       <meta
