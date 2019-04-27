@@ -77,20 +77,23 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 <div className="upcomingMeetup-sponsors">
                   {sponsors.map(sponsor => (
                     <div className="upcomingMeetup-sponsor" key={sponsor.name}>
-                      <img
-                        className="upcomingMeetup-sponsorImage"
-                        src={
-                          sponsor.image ? sponsor.image : HeadshotPlaceholder
-                        }
-                        alt={
-                          sponsor.image
-                            ? sponsor.name
-                            : 'Default headshot placeholder'
-                        }
-                      />
-                      <span className="upcomingMeetup-sponsorName">
-                        {sponsor.name}
-                      </span>
+                      <a
+                        href={sponsor.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          className="upcomingMeetup-sponsorImage"
+                          src={
+                            sponsor.image ? sponsor.image : HeadshotPlaceholder
+                          }
+                          alt={
+                            sponsor.image
+                              ? sponsor.name
+                              : 'Default headshot placeholder'
+                          }
+                        />
+                      </a>
                     </div>
                   ))}
                 </div>

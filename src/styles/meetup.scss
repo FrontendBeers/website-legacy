@@ -96,13 +96,26 @@
   &-sponsors {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: -10px;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 400px;
+  }
 
-    @include respond-to('medium') {
-      margin-bottom: 0x;
-      margin: 0 -20px;
-    }
+  &-sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+  }
+
+  &-sponsorImage {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  &-sponsorName {
+    font-weight: 400;
+    margin-bottom: 5px;
   }
 
   &-presenter {

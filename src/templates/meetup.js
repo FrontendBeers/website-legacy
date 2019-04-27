@@ -34,6 +34,25 @@ class MeetupTemplate extends Component {
             </a>
           </p>
         </div>
+        {this.props.meetup.sponsors.length > 0 && (
+          <div className="meetup-sponsors">
+            {this.props.meetup.sponsors.map(sponsor => (
+              <div className="meetup-sponsor" key={sponsor.name}>
+                <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="meetup-sponsorImage"
+                    src={sponsor.image ? sponsor.image : HeadshotPlaceholder}
+                    alt={
+                      sponsor.image
+                        ? sponsor.name
+                        : 'Default headshot placeholder'
+                    }
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
         <div className="meetup-presenters">
           {this.props.meetup.presenters.map(presenter => (
             <div className="meetup-presenter" key={presenter.name}>
@@ -73,11 +92,6 @@ class MeetupTemplate extends Component {
                 </ul>
               </div>
             </div>
-          ))}
-        </div>
-        <div className="meetup-sponsors">
-          {this.props.meetup.sponsors.map(sponsor => (
-            <h1>{sponsor.name}</h1>
           ))}
         </div>
       </section>
