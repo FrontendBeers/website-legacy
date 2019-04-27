@@ -1,15 +1,19 @@
 ---
 templateKey: meetup
-title: "React Beer Lille #1 - Storyb'Hooks"
+title: 'React Beer Lille #1 - Storyb''Hooks'
 date: 2019-04-04T18:30:00.000Z
-url: https://www.meetup.com/fr-FR/ReactBeerLille/events/259729492/
+url: 'https://www.meetup.com/fr-FR/ReactBeerLille/events/259729492/'
 presenters:
   - image: /img/lauthieb.jpg
     links:
+      - linkText: Twitter
+        linkURL: 'https://twitter.com/lauthieb'
       - linkText: Vidéo
         linkURL: 'https://www.youtube.com/watch?v=zMpSwo03aKo'
+      - linkText: Slides
+        linkURL: 'https://reactbeerlille.github.io/storybook-talk/'
     name: Laurent Thiebault
-    presentationTitle: "Storybook, le playground qu'il vous faut pour vos composants UI !"
+    presentationTitle: 'Storybook, le playground qu''il vous faut pour vos composants UI !'
     text: >-
       Storybook est un environnement de développement d'interface utilisateur.
       Cet outil nous permet de créer des composants de manière indépendante et
@@ -20,7 +24,11 @@ presenters:
       votre projet, ce qu'il apporte, les différents addons disponibles et
       comment son snapshot testing intégré vous sauvera la vie !
   - image: /img/olivier-youf.jpg
-    links: []
+    links:
+      - linkText: Twitter
+        linkURL: 'https://twitter.com/oyouf'
+      - linkText: Slides
+        linkURL: 'https://github.com/oyouf/devoxx_2019'
     name: Olivier Youf
     presentationTitle: Repenser son application React avec les Hooks
     text: >-
@@ -39,3 +47,4 @@ location:
   mapsLongitude: 3.142594
   name: Decathlon Campus
 ---
+
