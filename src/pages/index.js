@@ -67,6 +67,28 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   </a>
                 </p>
               )}
+              {sponsors.length > 0 && (
+                <div className="upcomingMeetup-sponsors">
+                  {sponsors.map(sponsor => (
+                    <div className="upcomingMeetup-sponsor" key={sponsor.name}>
+                      <img
+                        className="upcomingMeetup-sponsorImage"
+                        src={
+                          sponsor.image ? sponsor.image : HeadshotPlaceholder
+                        }
+                        alt={
+                          sponsor.image
+                            ? sponsor.name
+                            : 'Default headshot placeholder'
+                        }
+                      />
+                      <span className="upcomingMeetup-sponsorName">
+                        {sponsor.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
               {presenters.length > 0 && (
                 <div className="upcomingMeetup-presenters">
                   {presenters.map(presenter => (
@@ -118,8 +140,6 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   ))}
                 </div>
               )}
-              {sponsors.length > 0 &&
-                sponsors.map(sponsor => <h1>{sponsor.name}</h1>)}
               <p className="upcomingMeetup-mapNote">{home.mapsNote}</p>
               <div className="upcomingMeetup-mapWrapper">
                 <Map

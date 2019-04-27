@@ -154,6 +154,33 @@
     font-weight: 400;
   }
 
+  &-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &-sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  &-sponsorImage {
+    height: 130px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  }
+
+  &-sponsorName {
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
   &-mapWrapper {
     position: relative;
     height: 450px;
