@@ -14,6 +14,7 @@ const TemplateWrapper = ({
   <div>
     <Helmet>
       <html lang="fr" />
+
       <meta name="og:url" content="https://reactbeerlille.org" />
       <meta property="og:type" content="article" />
       <meta property="og:title" content="React Beer Lille" />
@@ -41,6 +42,19 @@ const TemplateWrapper = ({
         name="twitter:image"
         content="https://secure.meetupstatic.com/photos/event/3/e/1/9/600_479415897.jpeg"
       />
+
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-136135783-2"
+      />
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-136135783-2');
+        `}
+      </script>
     </Helmet>
     <Navbar data={navbarData} />
     <main>{children}</main>
