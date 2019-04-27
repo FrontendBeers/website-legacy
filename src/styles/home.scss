@@ -105,7 +105,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   &-presenter {
@@ -189,6 +189,49 @@
     text-align: center;
     margin-bottom: 10px;
     @include small-font();
+  }
+}
+
+.sponsors {
+  @include medium-font();
+  background-color: $background-dark;
+  color: $body-light;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include large-font();
+
+    @include respond-to('small') {
+      margin-bottom: 80px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &-listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  &-listItemImage {
+    margin-bottom: 20px;
+    height: 50px;
+
+    @include respond-to('small') {
+      height: 100px;
+    }
+  }
+
+  &-listItemName {
+    font-weight: 400;
   }
 }
 
