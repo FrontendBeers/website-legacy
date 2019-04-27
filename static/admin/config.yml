@@ -143,6 +143,11 @@ collections:
                     fields:
                       [
                         { label: 'Name', name: 'name', widget: 'string' },
+                        {
+                          label: 'Twitter URL',
+                          name: 'twitterURL',
+                          widget: 'string',
+                        },
                         { label: 'Image', name: 'image', widget: 'image' },
                         {
                           label: 'Image Description',

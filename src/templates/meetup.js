@@ -54,7 +54,12 @@ class MeetupTemplate extends Component {
                   {presenter.links &&
                     presenter.links.map((link, index) => (
                       <li key={index} className="meetup-presenterLinkItem">
-                        <a className="meetup-presenterLink" href={link.linkURL}>
+                        <a
+                          className="meetup-presenterLink"
+                          href={link.linkURL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {link.linkText}
                         </a>
                       </li>

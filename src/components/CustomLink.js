@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 
-export const CustomLink = ({ linkType, linkURL, children, className = "" }) => {
-  if (linkType === "internal") {
+export const CustomLink = ({ linkType, linkURL, children, className = '' }) => {
+  if (linkType === 'internal') {
     return (
       <Link className={className} to={linkURL}>
         {children}
@@ -11,7 +11,12 @@ export const CustomLink = ({ linkType, linkURL, children, className = "" }) => {
     );
   } else {
     return (
-      <a className={className} href={linkURL}>
+      <a
+        className={className}
+        href={linkURL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );
@@ -19,7 +24,7 @@ export const CustomLink = ({ linkType, linkURL, children, className = "" }) => {
 };
 
 CustomLink.propTypes = {
-  linkType: PropTypes.string,
+  linkType: PropTypes.string
 };
 
 export default CustomLink;

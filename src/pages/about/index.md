@@ -28,6 +28,7 @@ organizers:
     - image: /img/lauthieb.jpg
       imageAlt: Laurent Thiebault
       name: Laurent Thiebault
+      twitterURL: https://twitter.com/lauthieb
 seo:
   browserTitle: A propos | React Beer Lille
   description: >-

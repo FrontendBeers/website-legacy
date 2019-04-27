@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import ReactMarkdown from "react-markdown";
-import Helmet from "react-helmet";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import ReactMarkdown from 'react-markdown';
+import Helmet from 'react-helmet';
 
-import Layout from "../components/Layout";
-import HTMLContent from "../components/Content";
-import "../styles/about-page.scss";
+import Layout from '../components/Layout';
+import HTMLContent from '../components/Content';
+import '../styles/about-page.scss';
 
 export const AboutPageTemplate = props => {
   const { page } = props;
@@ -19,7 +19,10 @@ export const AboutPageTemplate = props => {
             <h1 className="about-title">{page.frontmatter.title}</h1>
           </div>
           <div className="about-imageWrapper">
-            <img src={page.frontmatter.mainImage.image} alt={page.frontmatter.mainImage.imageAlt} />
+            <img
+              src={page.frontmatter.mainImage.image}
+              alt={page.frontmatter.mainImage.imageAlt}
+            />
           </div>
         </section>
         <section className="section">
@@ -41,21 +44,41 @@ export const AboutPageTemplate = props => {
       </div>
       <section className="section  developerGroups  about-developerGroups">
         <div className="container">
-          <ReactMarkdown source={page.frontmatter.developerGroups} />
+          <ReactMarkdown
+            source={page.frontmatter.developerGroups}
+            renderers={{
+              link: props => (
+                <a href={props.href} target="_blank" rel="noopener noreferrer">
+                  {props.children}
+                </a>
+              )
+            }}
+          />
         </div>
       </section>
       <section className="section  organizers  about-organizers">
         <div className="container  organizers-container">
-          <h2 className="organizers-title">{page.frontmatter.organizers.title}</h2>
+          <h2 className="organizers-title">
+            {page.frontmatter.organizers.title}
+          </h2>
           <ul className="organizers-list">
             {page.frontmatter.organizers.gallery.map((galleryImage, index) => (
               <li key={index} className="organizers-listItem">
-                <img
-                  className="organizers-listItemImage"
-                  src={galleryImage.image}
-                  alt={galleryImage.imageAlt}
-                />
-                <span className="organizers-listItemName">{galleryImage.name}</span>
+                <a
+                  href={galleryImage.twitterURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'grid' }}
+                >
+                  <img
+                    className="organizers-listItemImage"
+                    src={galleryImage.image}
+                    alt={galleryImage.imageAlt}
+                  />
+                  <span className="organizers-listItemName">
+                    {galleryImage.name}
+                  </span>
+                </a>
               </li>
             ))}
           </ul>
@@ -69,8 +92,8 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData } = data;
   const {
     frontmatter: {
-      seo: { title: seoTitle, description: seoDescription, browserTitle },
-    },
+      seo: { title: seoTitle, description: seoDescription, browserTitle }
+    }
   } = page;
 
   return (
@@ -86,7 +109,7 @@ const AboutPage = ({ data }) => {
 };
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 };
 
 export default AboutPage;
@@ -112,6 +135,7 @@ export const aboutPageQuery = graphql`
             image
             imageAlt
             name
+            twitterURL
           }
         }
         seo {
