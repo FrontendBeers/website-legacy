@@ -124,6 +124,7 @@ export const pastMeetupsPageQuery = graphql`
             }
             location {
               name
+              mapsLink
             }
           }
         }

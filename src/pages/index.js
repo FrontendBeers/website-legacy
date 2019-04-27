@@ -51,7 +51,13 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
               </p>
               <p className="upcomingMeetup-detail  upcomingMeetup-detail--location">
                 <span className="upcomingMeetup-detailLabel">Lieu: </span>
-                {upcomingMeetup.location.name}
+                <a
+                  href={upcomingMeetup.location.mapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {upcomingMeetup.location.name}
+                </a>
               </p>
               {upcomingMeetup.url && (
                 <p className="upcomingMeetup-detail  upcomingMeetup-detail--url">

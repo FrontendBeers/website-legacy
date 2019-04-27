@@ -25,7 +25,13 @@ class MeetupTemplate extends Component {
           </p>
           <p className="meetup-metaField  meetup-metaField--location">
             <span className="meetup-label">Lieu :</span>{' '}
-            {this.props.meetup.location.name}
+            <a
+              href={this.props.meetup.location.mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {this.props.meetup.location.name}
+            </a>
           </p>
         </div>
         <div className="meetup-presenters">

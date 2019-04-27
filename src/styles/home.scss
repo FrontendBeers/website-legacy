@@ -105,7 +105,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   &-presenter {
@@ -158,20 +158,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 20px;
   }
 
   &-sponsor {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 200px;
     max-width: 100%;
-    padding: 20px;
-    margin: 20px;
   }
 
   &-sponsorImage {
-    height: 130px;
+    height: 50px;
     border-radius: 100px;
     margin-bottom: 10px;
   }
