@@ -60,18 +60,14 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 </a>
               </p>
               {upcomingMeetup.url && (
-                <p className="upcomingMeetup-detail  upcomingMeetup-detail--url">
-                  <span className="upcomingMeetup-detailLabel">
-                    S'inscrire :{' '}
-                  </span>
-                  <a
-                    href={upcomingMeetup.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    ici
-                  </a>
-                </p>
+                <a
+                  href={upcomingMeetup.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="upcomingMeetup-detail--button"
+                >
+                  S'inscrire
+                </a>
               )}
               {upcomingMeetupSponsors.length > 0 && (
                 <div className="upcomingMeetup-sponsors">
