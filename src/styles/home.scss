@@ -95,6 +95,25 @@
     &--location {
       margin-bottom: 10px;
     }
+
+    &--button {
+      padding: 10px 15px;
+      background-color: $golden-apricot;
+      border-radius: 5px;
+      font-weight: 500;
+      box-shadow: $shadow-light;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: $shadow-dark;
+      }
+
+      &:active {
+        transform: translateY(0px);
+        box-shadow: $shadow-light;
+      }
+    }
   }
 
   &-detailLabel {
