@@ -4,7 +4,8 @@ title: 'React Beer Lille #3 - Une bonne reason de revenir !'
 date: 2019-06-27T18:30:41.626Z
 url: 'https://www.meetup.com/fr-FR/ReactBeerLille/events/262028719/'
 presenters:
-  - links:
+  - image: /img/thomas-haessle.jpeg
+    links:
       - linkText: Twitter
         linkURL: 'https://twitter.com/oteku'
     name: Thomas Haesslé
