@@ -9,10 +9,17 @@ presenters:
         linkURL: 'https://twitter.com/oteku'
     name: Thomas Haesslé
     presentationTitle: Reasonable React (with beers)
+    text: >-
+      ReasonML est une syntaxe de OCaml développée par Jordan Walke (le createur
+      de React) au sein de Facebook. Un langage statiquement (bien) typé qui
+      permet notament de mieux raisonner ses applications Reactjs. Je vous
+      propose un tour rapide du langage, une découverte du framework ReasonReact
+      autour d'une application houblonnée et enfin une ouverture sur les
+      perspectives du langage, notamment pour des applications natives.
 sponsors:
-  - image: /img/email.svg
+  - image: /img/brigad.png
     name: Brigad
-    url: 'https://google.fr'
+    url: 'https://brigad.co/fr-FR'
   - image: /img/saveur-biere.png
     name: Saveur Bière
     url: 'https://www.saveur-biere.com/fr/'
