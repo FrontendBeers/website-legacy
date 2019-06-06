@@ -1,7 +1,7 @@
 ---
 templateKey: meetup
 title: 'React Beer Lille #3 - Une bonne reason de revenir !'
-date: 2019-06-06T16:27:41.626Z
+date: 2019-06-27T18:30:41.626Z
 url: 'https://www.meetup.com/fr-FR/ReactBeerLille/events/262028719/'
 presenters:
   - links:
