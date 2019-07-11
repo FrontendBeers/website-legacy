@@ -172,7 +172,7 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
       <section className="section  sponsors">
         <div className="container  sponsors-container">
           <h2 className="sponsors-title">
-            Sponsor annuel{' '}
+            Sponsors annuel{' '}
             <span role="img" aria-label="Annual sponsor">
               ❤️
             </span>
@@ -188,9 +188,25 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 <img
                   className="sponsors-listItemImage"
                   src={
-                    'https://d29dpxox3qezd.cloudfront.net/uploads/mentor/5bb75be115a08823bad4f850/logo.png?v=1555653607'
+                    '/img/decathlon.png'
                   }
                   alt={'Decathlon'}
+                />
+              </a>
+            </li>
+            <li className="sponsors-listItem">
+              <a
+                href="https://www.saveur-biere.com/fr/86-recrutement.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: 'grid' }}
+              >
+                <img
+                  className="sponsors-listItemImage"
+                  src={
+                    '/img/saveur-biere-white.png'
+                  }
+                  alt={'Saveur Bière'}
                 />
               </a>
             </li>

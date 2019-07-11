@@ -43,7 +43,7 @@ presenters:
       pleinement cette nouvelle fonctionnalité.
 sponsors:
   - name: 'Decathlon'
-    image: https://d29dpxox3qezd.cloudfront.net/uploads/mentor/5bb75be115a08823bad4f850/logo.png?v=1555653607
+    image: /img/decathlon.png
     url: https://recrutement.decathlon.fr/
   - name: 'Saveur Bière'
     image: /img/saveur-biere.png

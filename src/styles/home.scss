@@ -244,10 +244,10 @@
 
   &-listItemImage {
     margin-bottom: 20px;
-    height: 50px;
+    height: 40px;
 
     @include respond-to('small') {
-      height: 100px;
+      height: 80px;
     }
   }
 
