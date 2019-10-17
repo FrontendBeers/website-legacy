@@ -12,7 +12,7 @@ React Beer Lille's website built with Gatsby & Netlify CMS.
 
 ```
 $ git clone git@github.com:ReactBeerLille/website.git
-$ cd gatsby-netlify-cms
+$ cd website
 $ npm i
 $ npm run develop
 ```
